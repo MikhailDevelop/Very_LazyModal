@@ -1,0 +1,28 @@
+<div class="bars">bars </div>
+                  <div class="overflow">
+                    <div class="modalWin">modal
+                        <div class="close">x</div>
+                      </div>
+                  </div>
+   
+   
+    .overflow {
+                 display: none;
+                 position: absolute;
+                    }
+    .modalWin {
+                 display: block;
+                 position: absolute;
+                    }
+                    
+     let bars = document.getElementsByClassName('bars')[0];
+                    let overflow = document.getElementsByClassName('overflow')[0];
+                    let modalWin = document.getElementsByClassName('modalWin')[0];
+                        
+                        bars.onclick = function(event) {
+                            overflow.style.display='block';
+                        }
+
+                        overflow.onclick = function(event) {
+                            overflow.style.display='none';
+                        }
